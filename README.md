@@ -44,8 +44,6 @@ You're done!
 
 To use the application, you need a valid [Wowza Streaming Cloud account](https://cloud.wowza.com/) and access to the API.
 
-> **Note:** If you don't have API access, [Request Access to Wowza Streaming Cloud API](https://www.wowza.com/products/streaming-cloud/features/api-access-request). After you're accepted to the Wowza Streaming Cloud REST API, your API key will be available on the **API Access** page of your [Wowza Streaming Cloud account](https://cloud.wowza.com/).
-
 ### Put the 'API Key' and the 'API Access Key' into the configuration file
 
 ```yml
@@ -139,7 +137,7 @@ Enter the number for the action you want to execute.
 
 You will be guided through each step.
 
-> **Note:** The live stream settings used by default in this example application are based on the **Other RTSP Pull** encoder setting described in our user interface on [https://cloud.wowza.com/](https://cloud.wowza.com/). The data, along with lots of other examples of different live stream configurations, are stored in JSON files in the [data/live_stream/](https://github.com/WowzaMediaSystems/wsc-api-examples-ruby/tree/master/data/live_stream) directory in this repository:
+> **Note:** The live stream settings used by default in this example application are based on the **Other RTSP Pull** encoder setting described in our user interface on [https://cloud.wowza.com/](https://cloud.wowza.com/). The data, along with lots of other examples of different live stream configurations, are stored in JSON files in the [data/live_stream/](https://github.com/WowzaMediaSystems/wsc-api-examples-ruby/tree/main/data/live_stream) directory in this repository:
 
 ```json
 # data/live_stream/encoder_types/other_rtsp_pull.json
@@ -224,7 +222,7 @@ Example Response:
 
 ### Create a live stream (POST)
 
-> **Note:** Check [/data/live_stream/encoder_types/*.json](https://github.com/WowzaMediaSystems/wsc-api-examples-ruby/tree/master/data/live_stream/encoder_types) for real-world JSON examples.
+> **Note:** Check [/data/live_stream/encoder_types/*.json](https://github.com/WowzaMediaSystems/wsc-api-examples-ruby/tree/main/data/live_stream/encoder_types) for real-world JSON examples.
 
 ```ruby
 uri = URI("https://api.cloud.wowza.com/api/v1/live_streams/")
@@ -309,7 +307,7 @@ Example Response:
 
 ### Update a live stream (PATCH)
 
-> **Note:** Check [/data/live_stream/update_example.json](https://github.com/WowzaMediaSystems/wsc-api-examples-ruby/tree/master/data/live_stream/update_example.json) for a JSON example.
+> **Note:** Check [/data/live_stream/update_example.json](https://github.com/WowzaMediaSystems/wsc-api-examples-ruby/tree/main/data/live_stream/update_example.json) for a JSON example.
 
 ```ruby
 uri = URI("https://api.cloud.wowza.com/api/v1/live_streams/[LIVE_STREAM_ID]/")
@@ -505,24 +503,16 @@ Example Response:
 <a name="references"></a>
 ## References
 
-[Get access to the Wowza Streaming Cloud REST API](https://www.wowza.com/products/streaming-cloud/features/api-access-request)
-
-[Your API keys (API access required)](https://cloud.wowza.com/en/manage/access_keys)
-
-[Interactive API documentation (API access required)](https://sandbox.cloud.wowza.com/apidocs/v1/)
-
-[Wowza Streaming Cloud Support articles](https://www.wowza.com/forums/content.php?775-Wowza-Streaming-Cloud-REST-API)
+[Wowza Streaming Cloud REST API Reference](https://www.wowza.com/docs/wowza-streaming-cloud-rest-api-reference-documentation)
 
 <a name="contact"></a>
 ## Contact
 
 Wowza Media Systems™, LLC
 
-Wowza Media Systems provides developers with a platform to create streaming applications and solutions. See [Wowza Developer Tools](https://www.wowza.com/resources/developers) to learn more about our APIs and SDK.
+Wowza Media Systems provides developers with a platform to create streaming applications and solutions. See [Wowza Developer Tools](https://www.wowza.com/developer) to learn more about our APIs and SDK.
 
 <a name="license"></a>
 ## License
 
-This code is distributed under the [BSD 3-Clause License](https://github.com/WowzaMediaSystems/wsc-api-examples-ruby/blob/master/LICENSE.txt).
-
-![alt tag](http://wowzalogs.com/stats/githubimage.php?plugin=wsc-api-examples-ruby)
+This code is distributed under the [BSD 3-Clause License](/LICENSE.txt).
